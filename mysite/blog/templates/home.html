@@ -8,5 +8,17 @@
     <h1>Benvenuto nel mio blog Django!</h1>
     <p>Questa è la homepage.</p>
      <p>{{ messaggio }}</p>
+     <form method="POST">
+        {% csrf_token %}
+        <input name="testo" type="text"></input>
+        <input name="numero" type="number"></input>  
+         <input type="submit">Invia Form</input>      
+     </form>
+<p>
+   il testo inserito è: {{testo}}
+   </p>
+   <p>
+     il numero inserito è: {{numero}}
+    </p>
 </body>
 </html>
