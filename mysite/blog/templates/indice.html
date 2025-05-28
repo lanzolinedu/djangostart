@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>MINISITO</title>
+</head>
+<body>
+    <h1>MINISITO</h1>
+
+        <a href="indice">INDICE</a> <br>
+    <a href="film">FILM</a> <br>
+    <a href="musica">MUSICA</a> <br>
+     
+<img src="/static/immagini/socks.png" alt="Socks">
+
+    <p>Questa è la homepage.</p>
+     <p>{{ messaggio }}</p>
+     <form method="POST">
+        {% csrf_token %}
+        <input name="testo" type="text"></input>
+        <input name="numero" type="number"></input>  
+         <input type="submit">Invia Form</input>      
+     </form>
+<p>
+   il testo inserito è: {{testo}}
+   </p>
+   <p>
+     il numero inserito è: {{numero}}
+    </p>
+</body>
+</html>

@@ -11,4 +11,12 @@ def home(request):
         'numero':numero
     }
 
-    return render(request, 'home.html', context)
+    return render(request, 'indice.html', context)
+
+def indice(request):
+    return render(request, 'indice.html')
+def musica(request):
+    return render(request, 'musica.html')
+def film(request):
+    return render(request, 'film.html')
+
